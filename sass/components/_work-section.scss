@@ -10,12 +10,12 @@
     position: relative;
     z-index: 0;
     width: calc((100% - 60px) / 3);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
-  
-  .work-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  
+    
   .work-description {
     position: absolute;
     bottom: 0;

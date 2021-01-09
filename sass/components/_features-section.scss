@@ -9,10 +9,10 @@
   
   .feature-item {
     width: calc((100% - 90px) / 4);
-  }
-  
-  .feature-item:not(:last-child) {
-    margin-right: 30px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   
   .feature-item .title {
