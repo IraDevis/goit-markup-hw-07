@@ -1,0 +1,24 @@
+.logo {
+    font-family: "raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $accent-text-color;
+   
+  }
+  
+  .header-logo {
+    color: $secondary-text-color;
+  }
+ 
+  
+  .nav-panel .logo {
+    margin-right: 93px;
+    padding-top: 22px;
+    padding-bottom: 27px;
+  }
+  
+  .footer-logo {
+    color: $title-text-color;
+  }
