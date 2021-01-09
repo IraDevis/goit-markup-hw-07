@@ -52,19 +52,19 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    & .footer-item:first-child {
+      margin-bottom: 9px;
+    }
   }
   
-  .footer-contacts a {
+  .footer-contacts .link {
     transition: color 250ms $time-function;
-  }
-  
-  .footer-contacts a:hover,
-  .footer-contacts a:focus {
-    color: $accent-text-color;
-  }
-  
-  .footer-item:first-child {
-    margin-bottom: 9px;
+
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+    }
   }
   
   .footer-container b {
@@ -109,6 +109,11 @@
     color: $title-text-color;
   
     transition: background-color 250ms $time-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-text-color;
+    }
   }
   
   .footer-socials .social-icon {
@@ -117,12 +122,7 @@
   
     fill: currentColor;
   }
-  
-  .social-link:hover,
-  .social-link:focus {
-    background-color: $accent-text-color;
-  }
-  
+   
   .form {
     display: flex;
     width: 570px;
