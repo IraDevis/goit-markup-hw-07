@@ -7,9 +7,10 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .header-container a {
-    display: block;
+
+    & .link {
+      display: block;
+    }
   }
   
   .nav-panel {
@@ -19,14 +20,14 @@
   .site-nav {
     display: flex;
     padding-left: 0;
-  }
-  
-  .site-nav .item {
-    position: relative;
-  }
-  
-  .site-nav .item:not(:last-child) {
-    margin-right: 50px;
+
+    & .item {
+      position: relative;
+    }
+
+    & .item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
   
   .site-nav .link {
@@ -41,28 +42,31 @@
     color: $secondary-text-color;
   
     transition: color 250ms $time-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+    }
   }
   
-  .site-nav a:hover,
-  .site-nav a:focus,
   .site-nav .current-page {
     color: $accent-text-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+    
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: 0;
+      border-radius: 2px;
+    
+      background-color: $accent-text-color;
+        }
   }
   
-  .current-page::after {
-    content: "";
-    position: absolute;
-  
-    width: 100%;
-    height: 4px;
-    left: 0;
-    bottom: 0;
-    border-radius: 2px;
-  
-    background-color: $accent-text-color;
-  }
-  
-  .header-contacts {
+    .header-contacts {
     display: flex;
     margin-left: auto;
     padding-left: 0;
@@ -71,6 +75,10 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    & .item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
   
   .header-contacts p {
@@ -87,15 +95,11 @@
     color: $main-text-color;
   
     transition: color 250ms $time-function;
-  }
-  
-  .header-contacts .link:hover,
-  .header-contacts .link:focus {
+
+    &:hover,
+    &:focus {
     color: $accent-text-color;
-  }
-  
-  .header-contacts .item:not(:last-child) {
-    margin-right: 50px;
+    }
   }
   
   .header-contacts .item {
@@ -105,9 +109,10 @@
   .contact-icon {
     margin-right: 10px;
     fill: currentColor;
+   
+    &:hover,
+    &:focus {
+      fill: $accent-text-color;
+    }
   }
   
-  .contact-icon:hover,
-  .contact-icon:focus {
-    fill: $accent-text-color;
-  }

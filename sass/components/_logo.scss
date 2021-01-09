@@ -4,21 +4,22 @@
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    
     color: $accent-text-color;
-   
+       
   }
   
-  .header-logo {
+  .logo-header  {
     color: $secondary-text-color;
   }
- 
   
+  .logo-footer {
+    color: $title-text-color;
+  }
+
   .nav-panel .logo {
     margin-right: 93px;
     padding-top: 22px;
     padding-bottom: 27px;
   }
   
-  .footer-logo {
-    color: $title-text-color;
-  }
