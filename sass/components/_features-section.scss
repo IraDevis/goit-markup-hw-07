@@ -1,6 +1,5 @@
-.feature-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .feature-section {
+    @extend %section-padding;
   }
   
   .feature-list {
@@ -39,9 +38,7 @@
   }
   
   .feature-icon-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
   
     width: 270px;
     height: 120px;

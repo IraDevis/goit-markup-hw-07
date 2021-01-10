@@ -1,5 +1,8 @@
 @import "./utils/variables";
 @import "./base/base-styles";
+@import "./utils/placeholders";
+@import "./utils/mixins"
+
 @import "./components/logo";
 @import "./components/header";
 @import "./components/footer";

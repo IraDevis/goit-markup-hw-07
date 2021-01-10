@@ -26,11 +26,9 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   
-    display: flex;
+    @extend %flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
+    
     width: 528px;
     height: 581px;
     border-radius: 4px;
@@ -43,9 +41,7 @@
   
   .close-button {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     top: 8px;
     right: 8px;
   
@@ -56,7 +52,6 @@
     border-radius: 50%;
   
     background-color: $main-bg-color;
-  
     transition: color 250ms $time-function;
 
     &:hover,
@@ -74,10 +69,8 @@
   }
   
   .modal-form {
-    display: flex;
+    @extend %flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-left: 40px;
     margin-right: 40px;
   }

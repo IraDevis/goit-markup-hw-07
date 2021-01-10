@@ -1,6 +1,5 @@
 .client-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @extend %section-padding;
   }
   
   .client-list {
@@ -17,10 +16,8 @@
   }
   
   .client-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+    @extend %flex-center;
+
     height: 100%;
     border: 1px solid #afb1b8;
     border-radius: 4px;

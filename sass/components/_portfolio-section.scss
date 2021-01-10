@@ -1,6 +1,5 @@
 .portfolio-section {
-    margin-top: 94px;
-    margin-bottom: 94px;
+  @extend %section-padding;
   }
   
   .head-page {
@@ -42,9 +41,7 @@
   }
 
   .container .sorting-buttons {
-    display: flex;
-    justify-content: center;
-  
+    @extend %flex-center;
     margin-bottom: 50px;
   }
   
