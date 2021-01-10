@@ -35,11 +35,8 @@ footer {
   margin-top: 0;
   margin-bottom: 9px;
 
-  font-weight: 400;
+  @include font-style($height: 1.71);
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 
   color: $title-text-color;
 }
@@ -47,11 +44,8 @@ footer {
 .footer-contacts {
   padding-left: 0;
 
-  font-weight: 400;
+  @include font-style($height: 1.71);
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 
   & .footer-item:first-child {
     margin-bottom: 9px;
@@ -72,11 +66,8 @@ footer {
 
   margin-bottom: 20px;
 
-  font-size: 14px;
+  @include font-style(700);
   font-style: normal;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   text-align: left;
   text-transform: uppercase;
 
@@ -134,9 +125,7 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
 
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include font-style($size: 16px, $height: 1.25);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -159,10 +148,7 @@ footer {
   height: 50px;
   outline: transparent;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font-style(700, 16px, 1.88, 0.06em);
 
   color: $title-text-color;
   background-color: $accent-text-color;

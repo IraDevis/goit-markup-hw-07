@@ -20,10 +20,7 @@
   padding: 6px 22px;
   outline: none;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
+  @include font-style(500, 16px, 1.63);
   text-align: center;
 
   color: $secondary-text-color;
@@ -90,10 +87,7 @@
   margin-top: 0;
   margin-bottom: 4px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font-style(700, 18px, 2, 0.06em);
 
   color: $secondary-text-color;
 }
@@ -102,10 +96,7 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+  @include font-style($size: 16px, $height: 1.88);
 }
 
 .project-thumb {
@@ -125,10 +116,7 @@
   margin-bottom: 110px;
   padding: 63px 24px;
 
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include font-style($size: 18px, $height: 1.56);
 
   background-color: rgba(33, 150, 243, 0.9);
   color: $title-text-color;

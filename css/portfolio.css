@@ -1,3 +1,20 @@
+.footer-socials .social-link, .subscribe-button, .container .sorting-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 a {
   text-decoration: none;
   color: #757575;
@@ -64,27 +81,10 @@ img {
   color: #212121;
 }
 
-.footer-socials .social-link, .subscribe-button, .container .sorting-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .logo {
   font-family: "raleway", sans-serif;
-  font-size: 26px;
   font-weight: 700;
+  font-size: 26px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -270,20 +270,20 @@ footer {
   margin-top: 0;
   margin-bottom: 9px;
   font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: normal;
   color: #ffffff;
 }
 
 .footer-contacts {
   padding-left: 0;
   font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 
 .footer-contacts .footer-item:first-child {
@@ -302,11 +302,11 @@ footer {
 .footer-container b {
   display: block;
   margin-bottom: 20px;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  font-style: normal;
   text-align: left;
   text-transform: uppercase;
   color: #ffffff;
@@ -363,6 +363,7 @@ footer {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;

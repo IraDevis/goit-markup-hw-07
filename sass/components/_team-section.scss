@@ -12,10 +12,7 @@
   margin-top: 0;
   margin-bottom: 10px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include font-style(500, 16px);
   text-align: center;
 
   color: $secondary-text-color;
@@ -25,10 +22,7 @@
   margin-top: 0;
   margin-bottom: 16px;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include font-style($size: 16px);
   text-align: center;
 }
 

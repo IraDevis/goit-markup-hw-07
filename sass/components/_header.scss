@@ -34,10 +34,7 @@
   padding-top: 30px;
   padding-bottom: 34px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font-style($weight: 500, $height: 1.14, $spacing: 0.02em);
 
   color: $secondary-text-color;
 
@@ -71,10 +68,7 @@
   margin-left: auto;
   padding-left: 0;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font-style($weight: 500, $height: 1.14, $spacing: 0.02em);
 
   & .item:not(:last-child) {
     margin-right: 50px;

@@ -30,11 +30,8 @@
   padding-top: 27px;
   padding-bottom: 27px;
 
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font-style($weight: 700, $height: 1.14);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: $title-text-color;
